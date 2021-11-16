@@ -1,5 +1,5 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@mui/styles';
 import { Grid, Typography } from '@mui/material';
 import Jumbo from '../static/jumbo.svg'
 

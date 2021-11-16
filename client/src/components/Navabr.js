@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@mui/styles';
 import { Link } from 'react-router-dom'
 
 const Navabr = () => {
@@ -12,7 +12,7 @@ const Navabr = () => {
                 <Link className={classes.link} to='/'>Home</Link>
                 {isLogin ? 
                     <>
-                        <Link className={classes.link} to='/newblog'>New Blog</Link>
+                        <Link className={classes.link} to='/create'>Create</Link>
                         <Link className={classes.link} to='/blogs'>Blogs</Link>
                         <Link className={classes.link} to='/profile'>Profile</Link>
                         <Link className={classes.link} to='/logout'>Logout</Link>   

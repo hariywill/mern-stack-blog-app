@@ -1,34 +1,51 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles'
-import { Grid, Typography } from '@mui/material'
-import Blog from './Blog'
+import { makeStyles } from '@mui/styles';
+import { Grid, Typography, Container,  } from '@mui/material'
+import BlogCard from './BlogCard'
 
 const Bloglist = ({ }) => {
     const classes = useStyles()
     return (
-        <div>
-            <Blog />
-            <Blog />
-            <Blog />
-            <Blog />
-            <Blog />
-            <Blog />
-            <Blog />
-            <Blog />
-        </div>
+        <>
+            <Container className={classes.blogsContainer}>
+                <Grid 
+                    container 
+                    spacing={3} 
+                    className={classes.cards}
+                    direction="row"
+                    justify="flex-start"
+                    alignItems="flex-start"
+                >
+                    <BlogCard />
+                    <BlogCard />
+                    <BlogCard />
+                    <BlogCard />
+                    <BlogCard />
+                    <BlogCard />
+                    <BlogCard />
+                    <BlogCard />
+                    <BlogCard />
+                    <BlogCard />
+                    <BlogCard />
+                    <BlogCard />
+                    <BlogCard />
+                    <BlogCard />
+                    <BlogCard />
+                </Grid>
+            </Container>
+        </>
     )
 }
 
 const useStyles = makeStyles(theme => ({
-    home: {
+    blogsContainer: {
         paddingLeft: '150px',
         paddingRight: '400px'
     },
-    jumbo: {
-        color: 'white',
-        display: 'inline-block',
-        marginLeft: '30px',
-    },
+    cards: {
+        //display: 'inline',
+    }
+    
 }))
 
 export default Bloglist
