@@ -45,7 +45,6 @@ const useStyles = makeStyles(theme => ({
         height: '100%',
         marginLeft: '30px',
         display: 'inline-block',
-        borderStyle: 'solid',
     },
     headline: {
         width: '80%',
@@ -56,7 +55,6 @@ const useStyles = makeStyles(theme => ({
     cardsContainer: {
         width: '80%',
         position: 'relative',
-        borderStyle: 'solid',
         left: '10%',
         padding: '10px',
     },

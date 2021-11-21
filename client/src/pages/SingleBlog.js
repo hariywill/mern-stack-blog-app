@@ -1,8 +1,9 @@
 import React from 'react'
 import { makeStyles } from '@mui/styles';
+import { useGlobalContext } from '../context/context';
 
 
-const Blog = () => {
+const SingleBlog = () => {
     return (
         <div>
             <h5>This is a blog</h5>
@@ -10,4 +11,4 @@ const Blog = () => {
     )
 }
 
-export default Blog
+export default SingleBlog

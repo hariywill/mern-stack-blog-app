@@ -14,7 +14,7 @@ const Navabr = () => {
                     <>
                         <Link className={classes.link} to='/create'>Create</Link>
                         <Link className={classes.link} to='/blogs'>Blogs</Link>
-                        <Link className={classes.link} to='/profile'>Profile</Link>
+                        <Link className={classes.link} to='/setting'>Setting</Link>
                         <Link className={classes.link} to='/logout'>Logout</Link>   
                     </>
                 :

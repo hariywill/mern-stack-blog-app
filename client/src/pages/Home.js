@@ -24,7 +24,6 @@ const useStyles = makeStyles(theme => ({
         //color: 'white',
         display: 'inline-block',
         marginLeft: '30px',
-        backgroundColor: 'yellow',
         //whiteSpace: 'nowrap',
     },
 }))

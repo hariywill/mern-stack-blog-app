@@ -1,10 +1,12 @@
 import React from 'react'
 import { makeStyles } from '@mui/styles';
 import { Grid, Typography, Container,  } from '@mui/material'
-import BlogCard from './BlogCard'
+import BlogCard from './BlogCard';
+import { useGlobalContext } from '../context/context';
 
 const Bloglist = ({ }) => {
     const classes = useStyles()
+    const { blogs } = useGlobalContext()
     return (
         <>
             <Container className={classes.blogsContainer}>
@@ -16,6 +18,9 @@ const Bloglist = ({ }) => {
                     justify="flex-start"
                     alignItems="flex-start"
                 >
+                    {/* {blogs.map((blog) => {
+                        return <BlogCard blog={blog} />
+                    })} */}
                     <BlogCard />
                     <BlogCard />
                     <BlogCard />

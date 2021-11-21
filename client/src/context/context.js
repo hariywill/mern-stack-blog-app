@@ -14,7 +14,9 @@ const AppProvider = ({ children }) => {
     const [state, dispatch] = useReducer(reducer, initialState)
 
     const [blogs, setBlogs] = useState([])
-
+    const [currentBlog, setCurrentBlog] = useState(null)
+    const password = ''
+    const name = ''
 
     useEffect(() => {
         setBlogs(fetchBlogs())
@@ -26,8 +28,14 @@ const AppProvider = ({ children }) => {
                 //user,
                 //isFetching,
                 //error,
+                password,
+                name,
                 blogs,
-                dispatch
+                dispatch,
+                blogs,
+                setBlogs,
+                currentBlog,
+                setCurrentBlog
             }}
         >
             {children}
